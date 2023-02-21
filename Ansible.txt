@@ -1,0 +1,5 @@
+Ansible es un motor open source que automatiza los procesos para preparar la infraestructura, gestionar la configuración, implementar las aplicaciones y organizar los sistemas, entre otros procedimientos de TI.
+
+La plataforma utiliza el protocolo SSH para conectarse a los servidores y ejecutar las tareas. De forma predeterminada, utiliza claves y un agente SSH y se conecta a las máquinas remotas con su nombre de usuario actual.
+
+Cuando Ansible comienza a funcionar, puede hacer un seguimiento del estado del sistema.
