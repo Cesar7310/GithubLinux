@@ -1,0 +1,5 @@
+Ansible es un motor open source que automatiza los procesos para preparar la infraestructura, gestionar la configuración, implementar las aplicaciones y organizar los sistemas, entre otros procedimientos de TI.
+
+Ansible se conecta a los nodos y les inserta pequeños programas denominados módulos, los cuales permiten realizar tareas de automatización en la plataforma. Luego ejecuta esos programas, que funcionan como modelos de recurso del estado deseado de los sistemas, y los retira cuando finaliza la tarea.
+
+Ansible contiene módulos integrados que puede utilizar para automatizar las tareas, o puede optar por escribir los suyos en cualquier lenguaje que pueda devolver mensajes en JSON, como Ruby, Python o Bash. En el caso de los módulos para la automatización de Windows, incluso es posible escribirlos en PowerShell.
