@@ -1,0 +1,55 @@
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+	ó
+sudo apt install ansible-core
+
+
+
+
+ansible --version 
+Y tiene que aparecer esta ruta
+config file = /etc/ansible/ansible.cfg
+
+
+
+
+
+
+
+sudo vim /etc/ssh/sshd_config 
+
+#LoginGraceTime 2m 
+PermitRootLogin yes -<<<ESTE SE MODIFICA Y SE PONE "yes" 
+#PermitRootLogin prohibit-password
+#StrictModes yes
+#MaxAuthTries 6
+#MaxSessions 10
+
+PasswordAuthentication yes   -<<<ESTE SE MODIFICA Y SE PONE "yes" 
+
+
+
+sudo su 
+"desde @root"
+ssh-keygen 
+ssh-copy-id root@0.0.0.0 La ip del Nodo Ansible
+ssh-copy-id root@0.0.0.0 La ip del Client
+
+
+En Ambas Máquinas!!!
+sudo vim /etc/ansible/hosts 
+"Se Agrega [nombre ya sea del grupo o de cada maquina]
+La ip del Nodo Ansible
+La ip del Client"
+
+
+
+"Comando para comprobar la conexión"
+ansible all -m ping 
+ansible -m ping [nombreDelGrupo]
+
+
+
+
