@@ -30,6 +30,17 @@ PermitRootLogin yes -<<<ESTE SE MODIFICA Y SE PONE "yes"
 PasswordAuthentication yes   -<<<ESTE SE MODIFICA Y SE PONE "yes" 
 
 
+:x   Para reescribir y cerrar
+
+"Ahora se pone el comando
+
+sudo systemctl reload sshd
+	ó
+sudo systemctl restart sshd
+
+Para reiniciar el servicio de ssh"
+
+
 
 sudo su 
 "desde @root"
@@ -40,10 +51,18 @@ ssh-copy-id root@0.0.0.0 La ip del Client
 
 En Ambas Máquinas!!!
 sudo vim /etc/ansible/hosts 
-"Se Agrega [nombre ya sea del grupo o de cada maquina]
-La ip del Nodo Ansible
-La ip del Client"
+"Se Agrega [el nombre ya sea del grupo o de cada maquina]
+La ip del Client" 0.0.0.0
 
+----> Ejemplo 
+
+[MaquinaLinux1]
+192.168.134.45
+
+[MaquinaLinux2]
+192.168.134.56
+
+<-----
 
 
 "Comando para comprobar la conexión"
